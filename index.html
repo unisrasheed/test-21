@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
+    <title>Rohyat Tour and Travels</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;0,600;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link type="text/css" rel="stylesheet" href="css/owl.carousel.min.css">
+    <link type="text/css" rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <style>
+        /* Styles for the popup */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: slideIn 0.5s ease-in-out; /* Added animation */
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* CSS Animation for sliding in the popup from the left */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <div id="arrow">
+        <i class="fa fa-arrow-up"></i>
+    </div>
+    <nav>
+        <div class="container">
+            <div class="menu-par">
+                <div class="logo-par">
+                    <a href="index.html">
+                        <h2>Rohyat Tour and Travels</h2>
+                    </a>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a class="menu-hover" href="index.html">Home</a></li>
+                        <li><a class="menu-hover" href="index.html">Travel</a></li>
+                        <li><a class="menu-hover" href="index.html">Book Now</a></li>
+                        <li><a class="menu-hover" href="index.html">Gallery</a></li>
+                        <li><a class="menu-hover" href="index.html">HolIday</a></li>
+                        <li><a class="menu-hover" href="index.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div id="toggle-btn">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <div class="header-info-par">
+                <h1 class="typewrite" data-period="2000"
+                    data-type='["Here we and Your Expectations Meet"]'>
+                </h1>
+                <p>We will be live soon  with  exciting Offers , Stay Connected with us.
+
+                    For any Queries , Please get in touch with Us.</p>
+                    
+                <a href="https://api.whatsapp.com/send/?phone=919149418161&text&type=phone_number&app_absent=0" 
+                class="whatsapp-anchor menu-hover"><img src="./images/whatsapp.png" id="whatsapp-icon" alt="" 
+                width="50px" height="50px"></a>
+              
+              <a href="https://www.instagram.com/therohyat/?igshid=MzRlODBiNWFlZA%3D%3D" 
+                class="whatsapp-anchor menu-hover"><img src="./images/insta-icon.jpg" id="insta-icon" alt="" 
+                width="50px" height="50px"></a>
+                <p class="d-flex flex-column gap-1">
+          <p> <b>Connect With Us</b></p>
+          
+            </div>
+            <div class="video">
+                <video id="video" autoplay loop muted>
+                    <source src="images/travel-video.mp4" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+    </header>
+    <!-- Second Slides Section -->
+    <!--
+    <section id="welcome-text">
+        <div class="container">
+            <h2>The Official Travel Site of the friendly Fiji Islands</h2>
+            <p>when an unknown printer took a gallery of type and scrambled it to make a type speicmen</p>
+        </div>
+    </section>
+-->
+    <!-- Slides Section Start-->
+    <section id="slides-par" style="margin-top: 30px;">
+        <div class="container">
+            <div class="slides">
+                <div class="slide_1 slide_2">
+                    <div class="slide-info">
+                        <p>Gulmarg </p>
+                    </div>
+                </div>
+                <div class="slide_1 slide_3">
+                    <div class="slide-info">
+                        <p>Sonamarg Gold</p>
+                    </div>
+                </div>
+                <div class="slide_1 slide_4">
+                    <div class="slide-info">
+                        <p>Pahalgam</p>
+                    </div>
+                </div>
+                <div class="slide_1 slide_5">
+                    <div class="slide-info">
+                        <p>Yousmarg Coast</p>
+                    </div>
+                </div>
+                <div class="slide_1 slide_6">
+                    <div class="slide-info">
+                        <p>Doodpathri Forest</p>
+                    </div>
+                </div>
+                <div class="slide_1 slide_7">
+                    <div class="slide-info">
+                        <p>Dal Lake</p>
+                    </div>
+                </div>
+                <div class="slide_1 slide_8">
+                    <div class="slide-info">
+                        <p>Nilnaag</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- popup starts here -->
+  <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <img src="./images/pop-upimg.webp" width="100%" alt="">
+            <h2 style="text-align: center; padding: 20px;     color: rgb(173, 140, 140);">Truth , Trust and Transparency.</h2>
+            <p  style="text-align: center; padding: 20px;     color: rgb(94, 94, 94);">If you are planning to Visit Kashmir in Future , Stay connected us for Best Packages.</p>
+        </div>
+    </div>
+<!-- pop up ends here -->
+
+
+    <!-- Slides Section Start-->
+
+    <!-- Book Now Section Start -->
+    <!-- <section id="book">
+        <div class="container">
+            <div class="book-content-par">
+                <div class="book-counter">
+                    <h3>Book Now</h3>
+                    <div id="clockdiv">
+                        <div>
+                            <span class="days"></span>
+                            <div class="smalltext">Days</div>
+
+                        </div>
+                        <div>
+                            <span class="hours"></span>
+                            <div class="smalltext">Hours</div>
+
+                        </div>
+                        <div>
+                            <span class="minutes"></span>
+                            <div class="smalltext">Minutes</div>
+
+                        </div>
+                        <div>
+                            <span class="seconds"></span>
+                            <div class="smalltext">Seconds</div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="book-form">
+                    <form>
+                        <input type="text" id="fname" name="firstname" placeholder="Your Name...">
+                        <input type="text" id="lname" name="lastname" placeholder="Your Last Name...">
+                        <select name="country" id="country">
+                            <option value="australia">Gulmarg</option>
+                            <option value="canada">Pahalgam</option>
+                            <option value="india">Yousmarg</option>
+                        </select>
+                        <textarea name="subject" id="subject" placeholder="Write something..."
+                            style="height: 200px;"></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Book Now Section End -->
+
+    <!-- Gallery Section Starts -->
+    <section id="gallery">
+        <div class="container">
+            <div class="row">
+                <div align="center" class="filter-btn-par">
+                    <button class="filter-button" data-filter="all">BEAUTY</button>
+                    <button class="filter-button" data-filter="diving">TRAVELS</button>
+                    <button class="filter-button" data-filter="nature">NATURE</button>
+                    <button class="filter-button" data-filter="health">TOURS</button>
+                </div>
+                <div class="filter-gal-par">
+                    <div class="gallery-item filter diving">
+                        <img src="images/gulmarg.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="gallery-item filter diving">
+                        <img src="images/pahalgamjpg.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="gallery-item filter diving">
+                        <img src="images/sonarmarg.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="gallery-item filter health">
+                        <img src="images/dal-lakepg.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="gallery-item filter health">
+                        <img src="images/taj-mahal.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="gallery-item filter nature">
+                        <img src="images/bagh-e-bahu.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="gallery-item filter nature">
+                        <img src="images/fiji-surprise/nature2.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="gallery-item filter nature">
+                        <img src="images/nilnag.jpg" alt="" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery Section Ends -->
+
+    <!-- Mutiple Slider Section Starts -->
+    <!-- <section id="water-slider">
+        <div class="container">
+            <h3>Start Planning Your Dream Holiday</h3>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="owl-img-par">
+                        <img src="images/gulmarg.jpg" alt="" class="img-responsive" />
+                        <div class="owl-img-info">
+                            <h3>Gulmarg</h3>
+                            <p>Kashmir</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="owl-img-par">
+                        <img src="images/pahalgamjpg.jpg" alt="" class="img-responsive" />
+                        <div class="owl-img-info">
+                            <h3>Pahalgam</h3>
+                            <p>Kashmir</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="owl-img-par">
+                        <img src="images/bagh-e-bahu.jpg" alt="" class="img-responsive" />
+                        <div class="owl-img-info">
+                            <h3>Bage-Bahu</h3>
+                            <p>Jammu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="owl-img-par">
+                        <img src="images/dal-lakepg.jpg" alt="" class="img-responsive" />
+                        <div class="owl-img-info">
+                            <h3>Dal Lake</h3>
+                            <p>Srinagar</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="owl-img-par">
+                        <img src="images/taj-mahal.jpg" alt="" class="img-responsive" />
+                        <div class="owl-img-info">
+                            <h3>Taj Mahal</h3>
+                            <p>Agra</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Blog Section Starts -->
+    <!-- <section id="blog">
+        <div class="container">
+            <h3>News And Events</h3>
+            <div class="blog-par">
+                <div class="blog-content"> -->
+                    <!-- one div for image and one for info -->
+                    <!-- <div class="blog-img-par">
+                        <img src="images/slider/bangcok.jpg" alt="" class="img-responsive">
+
+                    </div>
+                    <div class="blog-info-par">
+                        <ul>
+                            <li>Chiru Vishnoi</li>
+                            <li>24.08.2021</li>
+                        </ul>
+                        <h4>Lorem ipsum dolor consectetur</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut natus, deserunt deleniti
+                            sapiente omnis ab quas mollitia! Cumque, maxime at.</p>
+
+                    </div>
+                </div>
+                <div class="blog-content"> -->
+                    <!-- one div for image and one for info -->
+                    <!-- <div class="blog-img-par">
+                        <img src="images/slider/cario.jpg" alt="" class="img-responsive">
+
+                    </div>
+                    <div class="blog-info-par">
+                        <ul>
+                            <li>Chiru Vishnoi</li>
+                            <li>24.08.2021</li>
+                        </ul>
+                        <h4>Lorem ipsum dolor consectetur</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut natus, deserunt deleniti
+                            sapiente omnis ab quas mollitia! Cumque, maxime at.</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="blog-par">
+                <div class="blog-content"> -->
+                    <!-- one div for image and one for info -->
+                    <!-- <div class="blog-img-par">
+                        <img src="images/slider/bangcok.jpg" alt="" class="img-responsive">
+
+                    </div>
+                    <div class="blog-info-par">
+                        <ul>
+                            <li>Chiru Vishnoi</li>
+                            <li>24.08.2021</li>
+                        </ul>
+                        <h4>Lorem ipsum dolor consectetur</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut natus, deserunt deleniti
+                            sapiente omnis ab quas mollitia! Cumque, maxime at.</p>
+
+                    </div>
+                </div>
+                <div class="blog-content"> -->
+                    <!-- one div for image and one for info -->
+                    <!-- <div class="blog-img-par">
+                        <img src="images/slider/cario.jpg" alt="" class="img-responsive">
+
+                    </div>
+                    <div class="blog-info-par">
+                        <ul>
+                            <li>Chiru Vishnoi</li>
+                            <li>24.08.2021</li>
+                        </ul>
+                        <h4>Lorem ipsum dolor consectetur</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut natus, deserunt deleniti
+                            sapiente omnis ab quas mollitia! Cumque, maxime at.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Mutiple Slider Section Ends -->
+
+    <!-- Footer Starts-->
+<footer>
+        <div class="container">
+            <div class="footer-par">
+                <div class="footer-1 ">
+                    <h3 class="footer-logo-h">Rohyat Tour & Travels</h3>
+                    <h3 style="margin-top: 20px;">Email: therohyat@gmail.com</h3>
+                </div>
+                <div class="footer-1 footer-info">
+                    <h3>Rohyat Travels</h3>
+                    <ul>
+                        <li><a href="">Coming soon</a></li>
+                        <li><a href="">Coming soon</a></li>
+                        <li><a href="">Coming soon</a></li>
+                        <li><a href="">Coming soon</a></li>
+                    </ul>
+                </div>
+                <div class="footer-1 footer-info">
+                    <h3>Find Your Happy</h3>
+                    <ul>
+                        <li><a href="">Coming soon</a></li>
+                        <li><a href="">Coming soon</a></li>
+                        <li><a href="">Coming soon</a></li>
+                    </ul>
+                </div>
+                <div class="footer-1 footer-info">
+                    <h3>Need Help?</h3>
+                    <ul>
+                        <li><a href="">Coming soon</a></li>
+                        <li><a href="">Coming soon</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">Copyright © 2023 Created By 'Ma Hae Gam'</p>
+    </footer>
+
+
+
+
+    <script>
+
+        // Function to open the popup
+function openPopup() {
+    document.getElementById("popup").style.display = "block";
+}
+
+// Function to close the popup
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}
+
+// Trigger the popup automatically when the page loads
+window.addEventListener("load", function() {
+    openPopup();
+});
+
+        // JavaScript code to hide the popup on scroll
+        window.addEventListener('scroll', function() {
+            var popup = document.getElementById('popup');
+            popup.style.display = 'none';
+        });
+ 
+    </script>
+
+
+
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/extrenaljq.js"></script>
+</body>
+
+</html>
